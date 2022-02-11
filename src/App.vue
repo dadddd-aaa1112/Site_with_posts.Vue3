@@ -1,12 +1,12 @@
 <template>
-	<navbar> </navbar>
-	<div id="app">
+	<navbar></navbar>
+	<div class="app">
 		<router-view></router-view>
 	</div>
 </template>
-
 <script>
 import Navbar from '@/components/Navbar'
+
 export default {
 	components: {
 		Navbar,
@@ -15,8 +15,8 @@ export default {
 </script>
 <style>
 * {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 

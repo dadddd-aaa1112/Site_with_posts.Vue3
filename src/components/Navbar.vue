@@ -4,15 +4,17 @@
 		<div class="navbar__btns">
 			<my-button @click="$router.push('/users')">Users</my-button>
 
-			<my-button @click="$router.push('/about')" style="margin-left: 20px"
-				>About site</my-button
+			<my-button style="margin-left: 20px" @click="$router.push('/about')"
+				>О сайте</my-button
 			>
 		</div>
 	</div>
 </template>
+
 <script>
 export default {}
 </script>
+
 <style>
 .navbar {
 	height: 50px;

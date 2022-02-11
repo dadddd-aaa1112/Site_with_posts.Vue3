@@ -1,26 +1,29 @@
 import Main from '@/pages/Main'
-import UserPage from '@/pages/UserPage'
 import About from '@/pages/About'
+import UserPage from '@/pages/UserPage'
+import PostIdPage from '@/pages/PostIdPage'
 import { createRouter, createWebHistory } from 'vue-router'
 
-const routes = [
-	{
-		path: '/',
-		component: Main,
-	},
-	{
-		path: '/users',
-		component: UserPage,
-	},
-	{
-		path: '/about',
-		component: About,
-	},
-]
-
 const router = createRouter({
-	routes,
-	history: createWebHistory(process.env.BASE_URL),
+	history: createWebHistory(),
+	routes: [
+		{
+			path: '/',
+			component: Main,
+		},
+		{
+			path: '/about',
+			component: About,
+		},
+		{
+			path: '/users',
+			component: UserPage,
+		},
+		{
+			path: '/users/:id',
+			component: PostIdPage,
+		},
+	],
 })
 
 export default router
